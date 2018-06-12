@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import { Link } from 'react-router-dom';
+import { Tabs, Tab, Grid, Cell, Card, CardTitle, CardText, CardActions, Button, CardMenu, } from 'react-mdl';
+
 
 class Projects extends Component {
     constructor(props) {
@@ -24,7 +24,7 @@ class Projects extends Component {
                     
                     <CardActions border>
                         <Button colored a href="https://github.com/kkudumu/HotTrades" rel="noopener noreferrer" target="_blank">Github</Button>
-                        <Button colored>Live Demo</Button>
+                        <Button colored a href="https://www.youtube.com/watch?v=FFHp5B_lt0c">Live Demo</Button>
                     </CardActions>
 
                     <CardMenu style={{color: '#fff'}}>
@@ -39,24 +39,23 @@ class Projects extends Component {
                 <div className="projects-grid">
                 {/* Project 1 */}
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                    <CardTitle style={{color: '#fff', height: '176px', background:'url(https://cdn-images-1.medium.com/max/852/1*FfpvCSSSYWNWDtvuuS0gVA.png) center/cover'}}>
-                        Employee List
-                    </CardTitle>
+                <CardTitle style={{color: '#fff', height: '176px', background:'url(https://cdn-images-1.medium.com/max/852/1*FfpvCSSSYWNWDtvuuS0gVA.png) center/cover'}}>
+                    Pokemon Search
+                </CardTitle>
+                <CardText>
+                With this app, users can look up what pokemon they want and the app will make calls to pokeapi.co.
+                </CardText>
                 
-                    <CardText>
-                        This app pulls employees from jsonplaceholder.co into a contact list that can be viewed by users.
-                    </CardText>
+                <CardActions border>
+                    <Button colored a href="https://github.com/kkudumu/Pokemonsearch_ReactNative" rel="noopener noreferrer" target="_blank">Github</Button>
+                    <Button colored a href="https://youtu.be/a_WQE1cYE-w">Live Demo</Button>
+                </CardActions>
+
+                <CardMenu style={{color: '#fff'}}>
                     
-                    <CardActions border>
-                        <Button colored a href="https://github.com/kkudumu/EmployeeList_ReactNative" rel="noopener noreferrer" target="_blank">Github</Button>
-                        <Button colored>Live Demo</Button>
-                    </CardActions>
-
-                    <CardMenu style={{color: '#fff'}}>
-                      
-                    </CardMenu>
+                </CardMenu>
                 </Card>
-
+                <br/>
                 {/* Project 2 */}
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: '#fff', height: '176px', background:'url(https://cdn-images-1.medium.com/max/852/1*FfpvCSSSYWNWDtvuuS0gVA.png) center/cover'}}>
@@ -69,37 +68,38 @@ class Projects extends Component {
                 
                 <CardActions border>
                     <Button colored a href="https://github.com/kkudumu/SimpleTodoApp_ReactNative" rel="noopener noreferrer" target="_blank">Github</Button>
-                    <Button colored>Live Demo</Button>
+                    
                 </CardActions>
 
                 <CardMenu style={{color: '#fff'}}>
                     
                 </CardMenu>
                 </Card>
-                
+                <br/>
                 {/* Project 3 */}
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                <CardTitle style={{color: '#fff', height: '176px', background:'url(https://cdn-images-1.medium.com/max/852/1*FfpvCSSSYWNWDtvuuS0gVA.png) center/cover'}}>
-                    Pokemon Search
-                </CardTitle>
-                <CardText>
-                With this app, users can look up what pokemon they want and the app will make calls to pokeapi.co.
-                </CardText>
+                    <CardTitle style={{color: '#fff', height: '176px', background:'url(https://cdn-images-1.medium.com/max/852/1*FfpvCSSSYWNWDtvuuS0gVA.png) center/cover'}}>
+                        Employee List
+                    </CardTitle>
                 
-                <CardActions border>
-                    <Button colored a href="https://github.com/kkudumu/Pokemonsearch_ReactNative" rel="noopener noreferrer" target="_blank">Github</Button>
-                    <Button colored>Live Demo</Button>
-                </CardActions>
-
-                <CardMenu style={{color: '#fff'}}>
+                    <CardText>
+                        This app pulls employees from jsonplaceholder.co into a contact list that can be viewed by users.
+                    </CardText>
                     
-                </CardMenu>
-                </Card>
+                    <CardActions border>
+                        <Button colored a href="https://github.com/kkudumu/EmployeeList_ReactNative" rel="noopener noreferrer" target="_blank">Github</Button>
+                        
+                    </CardActions>
 
+                    <CardMenu style={{color: '#fff'}}>
+                      
+                    </CardMenu>
+                </Card>
+                <br/>
                 {/* Project 4 */}
                 <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                 <CardTitle style={{color: '#fff', height: '176px', background:'url(https://cdn-images-1.medium.com/max/852/1*FfpvCSSSYWNWDtvuuS0gVA.png) center/cover'}}>
-                    Pokemon Search
+                    Pokemon Map
                 </CardTitle>
                 <CardText>
                 A simple app built to learn React Native. The user can log in with a Meteor backend and see pokemon that are randomly generated on a map.
@@ -107,7 +107,7 @@ class Projects extends Component {
                 
                 <CardActions border>
                     <Button colored a href="https://github.com/kkudumu/PokemonMap_ReactNative" rel="noopener noreferrer" target="_blank">Github</Button>
-                    <Button colored>Live Demo</Button>
+                    
                 </CardActions>
 
                 <CardMenu style={{color: '#fff'}}>
@@ -121,7 +121,48 @@ class Projects extends Component {
         }
         else if(this.state.activeTab === 2){
             return(
-                <div><h1>This is React</h1></div>
+                <div className="projects-grid">
+                {/* Project 1 */}
+                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background:'url(https://cdn-images-1.medium.com/max/900/1*EntHChgUyirgbZ9A3zTxkA.png) center/cover'}}>
+                    Personal Portfolio
+                </CardTitle>
+            
+                <CardText>
+                    The code for this very site!
+                </CardText>
+                
+                <CardActions border>
+                    <Button colored a href="https://github.com/kkudumu/personalportfolio" rel="noopener noreferrer" target="_blank">Github</Button>
+                   
+                </CardActions>
+
+                <CardMenu style={{color: '#fff'}}>
+                    
+                </CardMenu>
+                </Card>
+                <br/>
+                {/* Project 2 */}
+                <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+                <CardTitle style={{color: '#fff', height: '176px', background:'url(https://cdn-images-1.medium.com/max/900/1*EntHChgUyirgbZ9A3zTxkA.png) center/cover'}}>
+                    Countdown Boss
+                </CardTitle>
+            
+                <CardText>
+                    A simple site that allows a user to enter a date and receive a countdown until that date.
+                </CardText>
+                
+                <CardActions border>
+                    <Button colored a href="https://github.com/kkudumu/countdownboss_react" rel="noopener noreferrer" target="_blank">Github</Button>
+                    <Button colored a href="https://kkudumu.github.io/CountdownBoss_React/">Try It Out!</Button>
+                </CardActions>
+
+                <CardMenu style={{color: '#fff'}}>
+                    
+                </CardMenu>
+                </Card>
+
+                </div>
             )
         }       
     }
